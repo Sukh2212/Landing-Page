@@ -1,0 +1,60 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  color: #fff;
+}
+
+.hero .highlight {
+  color: #ffdd57;
+}
+
+/* Typing Text */
+.typing-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  min-height: 40px;
+}
+
+/* About Section */
+.about h2 {
+  font-weight: bold;
+  color: #1c92d2;
+}
+
+/* Contact Section */
+.contact h2 {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Social Links Hover */
+.social-links a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-links a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Scroll Button */
+.scroll-btn {
+  transition: all 0.3s ease;
+}
+.scroll-btn:hover {
+  background: #ffdd57;
+  color: #000;
+  border-color: #ffdd57;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+}
