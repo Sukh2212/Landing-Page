@@ -139,8 +139,8 @@
       50% { border-color: transparent; }
     }
 
-    /* Project Cards */
-    .project-card {
+    /* Project & Skill Cards */
+    .project-card, .skill-card {
       background: var(--card-bg);
       backdrop-filter: blur(16px);
       border: 1px solid var(--border);
@@ -151,21 +151,21 @@
       color: var(--text-secondary);
     }
 
-    [data-theme="light"] .project-card {
+    [data-theme="light"] .project-card, [data-theme="light"] .skill-card {
       box-shadow: 0 8px 25px rgba(0,0,0,0.08);
       color: #333;
     }
 
-    .project-card:hover {
+    .project-card:hover, .skill-card:hover {
       transform: translateY(-20px);
       box-shadow: 0 30px 60px rgba(0,0,0,0.4);
     }
 
-    [data-theme="light"] .project-card:hover {
+    [data-theme="light"] .project-card:hover, [data-theme="light"] .skill-card:hover {
       box-shadow: 0 20px 40px rgba(0,0,0,0.12);
     }
 
-    .project-icon {
+    .project-icon, .skill-icon {
       font-size: 3.8rem;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       -webkit-background-clip: text;
@@ -207,6 +207,27 @@
     [data-theme="light"] .btn-disabled {
       background: #adb5bd;
       color: #fff;
+    }
+
+    /* Contact Section */
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #ff6b6b;
+      text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    }
+
+    [data-theme="light"] .contact-info a {
+      color: #c33764;
+    }
+
+    [data-theme="light"] .contact-info a:hover {
+      color: #e67e22;
     }
 
     /* Theme Toggle */
@@ -298,6 +319,54 @@
   </div>
 </section>
 
+<!-- SKILLS -->
+<section class="py-5 bg-opacity-50" id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Skills & Technologies</h2>
+    <div class="row g-5">
+
+      <!-- Languages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-5 text-center h-100" data-tilt data-tilt-max="8">
+          <i class="fas fa-code skill-icon"></i>
+          <h5 class="fw-bold mb-4">Languages</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="badge bg-primary fs-6 px-3 py-2">HTML</span>
+            <span class="badge bg-info text-dark fs-6 px-3 py-2">CSS</span>
+            <span class="badge bg-warning text-dark fs-6 px-3 py-2">JavaScript</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI/ML & Database -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-5 text-center h-100" data-tilt data-tilt-max="8">
+          <i class="fas fa-brain skill-icon"></i>
+          <h5 class="fw-bold mb-4">AI/ML & Database</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="badge bg-danger fs-6 px-3 py-2">AI/ML</span>
+            <span class="badge bg-success fs-6 px-3 py-2">MongoDB Atlas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card p-5 text-center h-100" data-tilt data-tilt-max="8">
+          <i class="fas fa-tools skill-icon"></i>
+          <h5 class="fw-bold mb-4">Tools</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <span class="badge bg-secondary fs-6 px-3 py-2">Postman</span>
+            <span class="badge bg-dark fs-6 px-3 py-2">GitHub</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section class="py-5" id="projects">
   <div class="container">
@@ -378,10 +447,28 @@
   </div>
 </section>
 
+<!-- CONTACT -->
+<section class="py-5 text-center" id="contact" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Get In Touch</h2>
+    <div class="contact-info lead">
+      <p class="mb-3">
+        <i class="fas fa-envelope me-3"></i>
+        <a href="mailto:your-email@example.com">sukhjinder888rayat@gmail.com</a>
+      </p>
+      <p class="mb-3">
+        <i class="fas fa-phone me-3"></i>
+        <a href="tel:+919999999999">+91 8968865837</a>
+      </p>
+    </div>
+    <p class="text-muted mt-4">Feel free to reach out for collaborations or opportunities!</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="py-5 text-center">
   <p class="mb-2">© 2025 Sukhjinder Singh</p>
- <!-- <small>Made with passion & modern tech</small> -->
+  <!-- <small>Made with passion & modern tech</small> -->
 </footer>
 
 <!-- Scripts -->
